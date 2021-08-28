@@ -1,0 +1,15 @@
+MAKING A POST:
+    update GetMedia page to get proper image size for large images
+    implement bubbls to post to page
+    implement Review page to show what actual post will look like
+
+SETTINGS:
+    Add a log out page
+    Add a edit profile page
+        needs a place to write bio
+
+BUBBLS:
+    Implement bubbls
+
+MISC:
+    pull down to refresh app
