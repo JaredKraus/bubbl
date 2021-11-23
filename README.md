@@ -21,29 +21,32 @@ The main pages of bubbl:
   6. User Login
 
 ### 0. Header and Footer
-![Header and Footer](./gifs/header-footer.jpg)
+<img src="./gifs/header-footer.jpg" alt="Header and Footer" width="300"/>
 
 ### 1. Profile Page
-![Profile Page](./gifs/profile.PNG)
+<img src="./gifs/profile.PNG" alt="Profile Page" width="300"/>
 
 ### 2. Create Post Pages
 ##### 2.1 Create Textual Post
-![Textual Post](./gifs/post-message.gif)
+<img src="./gifs/post-message.gif" alt="Textual Post" width="300"/>
 
 ##### 2.2 Create Image Post
-![Textual Post](./gifs/post-image.gif)
+<img src="./gifs/post-image.gif" alt="Image Post" width="300"/>
 
 ### 3. Explore
-![Explore Page](./gifs/search-and-follow.gif)
+<img src="./gifs/search-and-follow.gif" alt="Explore Page" width="300"/>
 
 ### 4. Feed
-![Feed Page](./gifs/feed.gif)
+<img src="./gifs/feed.gif" alt="Feed Page" width="300"/>
 
 ### 5. User Registration
-![User Registration](./gifs/register.gif)
+<img src="./gifs/register.gif" alt="User Registration" width="300"/>
 
 ### 6. User Login
-![User Login](./gifs/login.gif)
+<img src="./gifs/login.gif" alt="User Login" width="300"/>
+
+### Reference
+Backend help from: https://www.youtube.com/channel/UCQ5xY26cw5Noh6poIE-VBog
 
 
 
