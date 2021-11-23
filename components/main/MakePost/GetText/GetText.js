@@ -50,8 +50,8 @@ function GetText({route, navigation}) {
                     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('GetMedia', {text, title})} >
                         <Text style={styles.buttonText}>media</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('SelectBubbls', {text, image, imageWidth, imageHeight, title})} >
-                        <Text style={styles.buttonText}>bubbls</Text>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('ReviewPost', {text, image, imageHeight, imageWidth, title})} >
+                        <Text style={styles.buttonText}>review</Text>
                     </TouchableOpacity>
                 </View>
             </View>

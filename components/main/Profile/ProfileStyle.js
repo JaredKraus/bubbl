@@ -48,19 +48,19 @@ const styles = StyleSheet.create({
         shadowOffset: {width: -3, height: 3},
         shadowOpacity: 0.3   
     },
-    profileId: {
-        
+    profileImage: {
+        flex: 1,
+        width: '60%',
+        aspectRatio: 1/1
     },
     // -- 4. profile bio
     profileBioConatiner: {
-        borderWidth: 0.2,
-        flex: 3,
+        flex: 3
     },
     profileBio: {
         flex: 6,
         paddingHorizontal: '2%',
-        paddingVertical: '2%',
-        borderWidth: 0.2
+        paddingVertical: '2%'
 
     },
     // -- 3. profile name
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     },
     button: {
         height: '60%',
-        width: '45%',
+        width: '85%',
         backgroundColor: '#fff1f0',
         borderRadius: 5,
         alignItems: 'center',

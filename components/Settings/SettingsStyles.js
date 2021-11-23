@@ -16,10 +16,15 @@ const styles = StyleSheet.create({
         paddingHorizontal: '3%',
         borderBottomWidth: 0.2
     },
+    topCornerBox: {
+        height: '100%', 
+        aspectRatio: 1, 
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     logo: {
-        aspectRatio: 5/2,
-        width: '25%'
-
+        height: '80%',
+        width: '80%'
     },
     // -- 1. content --
     contentContainer: {
@@ -89,8 +94,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     button: {
-        height: '60%',
-        width: '45%',
+        height: 40,
+        width: 300,
         backgroundColor: '#fff1f0',
         borderRadius: 5,
         alignItems: 'center',

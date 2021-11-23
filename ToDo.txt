@@ -1,3 +1,7 @@
+CURRENTLY ON:
+    add footer to ManageBubbls with button to add new bubbl
+    Cap bubbls at 10 with a count?
+
 MAKING A POST:
     update GetMedia page to get proper image size for large images
     implement bubbls to post to page
@@ -13,3 +17,7 @@ BUBBLS:
 
 MISC:
     pull down to refresh app
+    nice fonts
+    verify birthday on registration
+
+

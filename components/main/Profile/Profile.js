@@ -6,7 +6,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import LoadingScreen from '../../Loading/Loading';
 import styles from './ProfileStyle';
 
-export default function Profile({navigation}) {
+export default function Profile({navigation, route}) {
 
     // load fonts
     let [fontsLoaded, error] = useFonts({
@@ -61,7 +61,7 @@ export default function Profile({navigation}) {
                             <View style={styles.profileBioConatiner} >
                                 
                                 <View style={styles.profileBio} >
-                                    <Text style={{fontSize: 18, fontFamily: font2}}>bio</Text>
+                                    <Text style={{fontSize: 18, fontFamily: font2}}>{`bio`}</Text>
                                 </View>
     
                             </View>
@@ -76,10 +76,6 @@ export default function Profile({navigation}) {
                             <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Settings") } >
                                 <Text style={styles.buttonText}>settings</Text>
                             </TouchableOpacity>
-                            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("ManageBubbls")} >
-                                <Text style={styles.buttonText}>bubbls</Text>
-                            </TouchableOpacity>
-                            
                         </View>
                         
                     </View>

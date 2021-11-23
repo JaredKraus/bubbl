@@ -7,7 +7,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 // Redux import
 import { useSelector, useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchUser, fetchUserPosts, fetchUserFollowing, clearData } from '../redux/actions/index';
+import { fetchUser, fetchUserPosts, fetchUserFollowing, fetchUserBubbls, clearData } from '../redux/actions/index';
 // Screen imports
 import FeedScreen from './main/Feed/Feed';
 import ProfileScreen from './main/Profile/Profile';
@@ -30,13 +30,14 @@ function Main({navigation}) {
     const dispatch = useDispatch();
 
     // bind action creators
-    const ac = bindActionCreators({ fetchUser, fetchUserPosts, clearData, fetchUserFollowing }, dispatch);
+    const ac = bindActionCreators({ fetchUser, fetchUserPosts, clearData, fetchUserFollowing, fetchUserBubbls }, dispatch);
     
     useEffect(() => {
         ac.clearData();
         ac.fetchUser();
         ac.fetchUserPosts();
         ac.fetchUserFollowing();
+        ac.fetchUserBubbls();
     }, []);
 
     return (

@@ -18,7 +18,7 @@ export default function UserProfile({navigation, route}) {
     // get redux state
     const {currentUser, following} = useSelector((state) => state.userState);
 
-    // on mount load the users infomation and posts
+    // on mount load the users infomation posts and bubbls
     useEffect(() => {
 
         firebase.firestore()
@@ -48,6 +48,7 @@ export default function UserProfile({navigation, route}) {
             })
             setUserPosts(posts)
         })
+
         if(following.indexOf(route.params.uid) > -1){
             
             setUserFollowing(true);
@@ -100,12 +101,15 @@ export default function UserProfile({navigation, route}) {
         }
         //follow user
         else {
+
             firebase.firestore()
             .collection("following")
             .doc(firebase.auth().currentUser.uid)
             .collection("usersFollowing")
             .doc(route.params.uid)
-            .set({})
+            .set({
+                
+            })
         }
     }
 
@@ -141,7 +145,7 @@ export default function UserProfile({navigation, route}) {
                             <View style={styles.profileBioConatiner} >
                                 
                                 <View style={styles.profileBio} >
-                                    <Text style={{fontSize: 18, fontFamily: font2}}>bio</Text>
+                                    <Text style={{fontSize: 18, fontFamily: font2}}>{`bio`}</Text>
                                 </View>
     
                             </View>
@@ -154,12 +158,8 @@ export default function UserProfile({navigation, route}) {
                         </View>
                         <View style={styles.profileButtonContainer} >
                             <TouchableOpacity style={styles.button} onPress={() => changeFollowing()} >
-                                <Text style={styles.buttonText}>{userFollowing ? "Unfollow" : "Follow"}</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={styles.button} onPress={() => null} >
-                                <Text style={styles.buttonText}>add to bubbls</Text>
-                            </TouchableOpacity>
-                            
+                                <Text style={styles.buttonText}>{userFollowing ? "remove from bubbl" : "add to bubbl"}</Text>
+                            </TouchableOpacity>       
                         </View>
                         
                     </View>

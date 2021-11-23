@@ -28,7 +28,8 @@ import ReviewPostScreen from './components/main/MakePost/ReviewPost/ReviewPost';
 import SelectBubblsScreen from './components/main/MakePost/SelectBubbls/SelectBubbls';
 import UserProfileScreen from './components/main/UserProfile/UserProfile';
 import SettingsScreen from './components/Settings/Settings';
-import ManageBubblsScreen from './components/bubbls/ManageBubbls';
+import ManageBubblsScreen from './components/bubbls/ManageBubbls/ManageBubbls';
+import AddBubblScreen from './components/bubbls/AddBubbl/AddBubbl';
 
 // create redux store
 const store = createStore(rootReducer, applyMiddleware(thunk))
@@ -94,6 +95,7 @@ export default function App() {
             <Stack.Screen name="Settings" component={SettingsScreen} options={{ headerShown: false }} />
 
             <Stack.Screen name="ManageBubbls" component={ManageBubblsScreen} options={{ headerShown: false }} />
+            <Stack.Screen name="AddBubbl" component={AddBubblScreen} options={{ headerShown: false }} />
             
           </Stack.Navigator>
         </NavigationContainer>

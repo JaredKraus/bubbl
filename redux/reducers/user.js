@@ -1,9 +1,10 @@
-import {USER_STATE_CHANGE, USER_POSTS_STATE_CHANGE, USER_FOLLOWING_STATE_CHANGE, CLEAR_DATA} from "../constants"
+import {USER_STATE_CHANGE, USER_POSTS_STATE_CHANGE, USER_FOLLOWING_STATE_CHANGE, CLEAR_DATA, USER_BUBBL_STATE_CHANGE} from "../constants"
 
 const initialState = {
     currentUser: null,
     posts: [],
-    following: []
+    following: [],
+    bubbls: [{id: "public", name: "public", color: "black"}]
 }
 
 export const user = (state = initialState, action) => {
@@ -25,6 +26,12 @@ export const user = (state = initialState, action) => {
             return {
                 ...state,
                 following: action.following
+            }
+
+        case USER_BUBBL_STATE_CHANGE:
+            return {
+                ...state,
+                bubbls: action.bubbls
             }
         
         case CLEAR_DATA:

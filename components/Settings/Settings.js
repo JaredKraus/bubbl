@@ -13,22 +13,27 @@ export default function Settings({navigation}) {
     return (
         <View style={styles.container} >
                 <View style={styles.header} >
-                    <TouchableOpacity onPress={() => navigation.pop() } >
-                        <Ionicons name="chevron-back" size={32} color="#000"/>
+                    <TouchableOpacity onPress={() => navigation.pop()} style={styles.topCornerBox} >
+                        <Ionicons name="chevron-back" size={36} color="#000"/>
                     </TouchableOpacity>
+
+                    <Text style={{fontSize: 20, color: '#0d265d'}} >settings</Text>
                     
-                    <Image
-                        source={require('../../content/logo-nobackground.jpg')}
-                        style={styles.logo}
-                    />
-                    <View style={{height: '58%', aspectRatio: 1}} />
+                    <View style={styles.topCornerBox} >
+                        <Image
+                            source={require('../../content/logo-b-inverted.jpg')}
+                            style={styles.logo}
+                        />
+                    </View>     
                 </View>
 
                 <View style={styles.contentContainer} >
                     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}} >
-                        <Button title='Log Out' onPress={() => LogOut()} />
-                     </View>
+                        <TouchableOpacity style={styles.button} onPress={() => LogOut()} >
+                            <Text style={styles.buttonText}>Logout</Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-            </View>
+        </View>
     )
 }

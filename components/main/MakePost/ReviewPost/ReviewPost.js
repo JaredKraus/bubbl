@@ -98,8 +98,8 @@ function ReviewPost({navigation, route}) {
                 </View>
 
                 <View style={styles.footer}>
-                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('SelectBubbls', {image, imageHeight, imageWidth, text, title})} >
-                        <Text style={styles.buttonText}>bubbls</Text>
+                    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('GetText', {text, image, imageHeight, imageWidth, title})} >
+                        <Text style={styles.buttonText}>text</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.postButton} onPress={() => image ? postImage() : savePostData(null)} >
                         <Text style={styles.buttonText}>post</Text>
